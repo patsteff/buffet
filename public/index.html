@@ -7,76 +7,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Einkehr</title>
     <link rel="stylesheet" href="styles.css">
+
 </head>
 
-<body>
-    <div>
-        <div>
-            <nav>
-                <div>
-                    <h1>
-                        <a href="/">Einkehr ins Bahnhofbuffet Arth-Goldau</a>
+<body class="text-gray-600 font-body">
+    <div class="grid md:grid-cols-5">
+        <div class="md:col-span-1 md:flex md:justify-end">
+            <nav class="text-right">
+                <div class="flex justify-between items-center">
+                    <h1 class="font-bold uppercase p-4 border-b border-gray-200">
+                        <a href="/" class="text-sm md:text-xl hover:text-gray-700">Einkehr</a>
                     </h1>
+                    <div class="px-4 cursor-pointer md:hidden" id="burger">
+                        <svg class="w-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
                 </div>
-                <ul>
-                    <li>
-                        <a href="#">
+                <ul class="text-sm mt-6 hidden md:block" id="menu">
+                    <li class="text-gray-800 py-1">
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-primary">
                             <span>Home</span>
+                            <svg class="w-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                                </path>
+                            </svg>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="py-1">
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-white">
                             <span>Über uns</span>
+                            <svg class="w-5 ml-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z">
+                                </path>
+                            </svg>
+
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <span>Untestützung</span>
+                    <li class="py-1">
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-white">
+                            <span>Unterstützung</span>
+                            <svg class="w-5 ml-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="py-1">
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-white">
                             <span>Kontakt</span>
+                            <svg class="w-5 ml-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                            </svg>
                         </a>
                     </li>
                 </ul>
             </nav>
         </div> <!-- end nav -->
 
-        <main>
-            <div>
-                <a href="#">Login</a>
-                <a href="#">Sign Up</a>
+        <main class="px-16 py-6 bg-yellow-300 md:col-span-4">
+            <div class="flex justify-center md:justify-end">
+                <a class="text-primary btn border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500"
+                    href="#">Login</a>
+                <a class="text-primary ml-2 btn border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500"
+                    href="#">Sign Up</a>
             </div>
+
+            <div class="flex items-center justify-center">
+                <div class="bg-red-500 h-4 w-6"></div>
+                <div class="bg-blue-500 h-8 w-6"></div>
+                <div class="bg-green-500 h-12 w-6"></div>
+            </div>
+
             <header>
-                <h2>Buchprojekt</h2>
-                <h3>Einkehr - Erinnerungen der letzten Wirtin</h3>
+                <h2 class="text-3xl font-semibold">Sie sind an unserem Buchprojekt interessiert?</h2>
+                <h3 class="text-xl">Wir halten Sie auf dem Laufenden sobald es verfügbar ist:</h3>
+                <input class="border" placeholder="E-Mail"></input>
             </header>
 
             <div>
-                <h4>Latest Reciptes</h4>
-                <div>
+                <h4 class="mt-12 pb-2 border-b border-blue-200">Latest Recipes</h4>
+                <div class="mt-8 grid lg:grid-cols-3 gap-10">
                     <!-- cards go here-->
-                    <div>
-                        <img src="img/cover.jpeg" alt="buchcover">
-                        <div>
-                            <span>5 Bean Chilli Stew</span>
-                            <span>Recipe by Mario</span>
+                    <div class="card hover:shadow-2xl">
+                        <img src="img/cover.jpeg" alt="buchcover" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">5 Bean Chilli Stew</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+
+                    <div class="card hover:shadow-2xl">
+                        <img src="img/cover.jpeg" alt="buchcover" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Suppe</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+
+                    <div class="card hover:shadow-2xl">
+                        <img src="img/cover.jpeg" alt="noodles" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Noodles</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+
+                    <div class="card hover:shadow-2xl">
+                        <img src="img/cover.jpeg" alt="curry" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Curry</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span>25 mins</span>
                         </div>
                     </div>
                 </div>
 
-                <h4>Most popular</h4>
-                <div>
+                <h4 class="mt-12 pb-2 border-b border-blue-200">Most popular</h4>
+                <div class="mt-8">
                     <!-- cards go here-->
-                    <div>
-                        <div>Load more</div>
+                    <div class="flex justify-center">
+                        <div
+                            class="bg-secondary-100 text-secondary-200 btn hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-1000">
+                            Load more</div>
                     </div>
                 </div>
             </div>
-
         </main>
     </div>
+    <script src="index.js"></script>
+
 </body>
 
 </html>
