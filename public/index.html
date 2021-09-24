@@ -14,9 +14,9 @@
     <div class="grid md:grid-cols-5">
         <div class="md:col-span-1 md:flex md:justify-end">
             <nav class="text-right">
-                <div class="flex justify-between items-center">
-                    <h1 class="font-bold uppercase p-4 border-b border-gray-200">
-                        <a href="/" class="text-sm md:text-xl hover:text-gray-700">Einkehr</a>
+                <div class="flex justify-between md:justify-end items-center">
+                    <h1 class="font-bold uppercase p-4">
+                        <a href="/" class="text-md md:text-xl hover:text-gray-700">Einkehr</a>
                     </h1>
                     <div class="px-4 cursor-pointer md:hidden" id="burger">
                         <svg class="w-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +26,7 @@
                         </svg>
                     </div>
                 </div>
-                <ul class="text-sm mt-6 hidden md:block" id="menu">
+                <ul class="text-md mt-6 hidden md:block" id="menu">
                     <li class="text-gray-800 py-1">
                         <a href="#" class="px-4 flex justify-end border-r-4 border-primary">
                             <span>Home</span>
@@ -75,102 +75,32 @@
             </nav>
         </div> <!-- end nav -->
 
-        <main class="px-16 py-6 bg-yellow-300 md:col-span-4">
-            <div class="flex justify-center md:justify-end">
-                <a class="text-primary btn border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500"
-                    href="#">Login</a>
-                <a class="text-primary ml-2 btn border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500"
-                    href="#">Sign Up</a>
-            </div>
-
-            <div class="flex items-center justify-center">
-                <div class="bg-red-500 h-4 w-6"></div>
-                <div class="bg-blue-500 h-8 w-6"></div>
-                <div class="bg-green-500 h-12 w-6"></div>
-            </div>
-
-            <header>
-                <h2 class="text-3xl font-semibold">Sie sind an unserem Buchprojekt interessiert?</h2>
-                <h3 class="text-xl">Wir halten Sie auf dem Laufenden sobald es verfügbar ist:</h3>
-                <input class="border" placeholder="E-Mail"></input>
-            </header>
-
-            <div>
-                <h4 class="mt-12 pb-2 border-b border-blue-200">Latest Recipes</h4>
-                <div class="mt-8 grid lg:grid-cols-3 gap-10">
-                    <!-- cards go here-->
-                    <div class="card hover:shadow-2xl">
-                        <img src="img/cover.jpeg" alt="buchcover" class="w-full h-32 sm:h-48 object-cover">
-                        <div class="m-4">
-                            <span class="font-bold">5 Bean Chilli Stew</span>
-                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
-                        </div>
-                        <div class="badge">
-                            <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span>25 mins</span>
-                        </div>
+        <main class="px-16 py-6 bg-gray-100 md:col-span-4">
+            <div class="min-h-screen bg-gray-100 flex my-6 flex-col justify-center sm:py-2">
+                <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-cyan-400 to-sky-500 shadow-2xl transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
                     </div>
+                    <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
+                        <div class="max-w-md mx-auto">
+                            <div>
+                                <img src="img/cover.jpeg" alt="bookcover" class="" />
+                            </div>
+                            <div class="divide-y divide-gray-200">
+                                <div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
+                                    <h2 class="text-bold text-xl">Sie sind an unserem Buchprojekt interessiert?</h2>
+                                    <h3 class="text-md">Wir halten Sie auf dem Laufenden sobald es verfügbar
+                                        ist:</h3>
+                                    <div class="flex justify-between">
+                                        <input class="border p-2 h-auto w-100 text-sm" type="email"
+                                            placeholder="E-Mail">
+                                        <button id="submit"
+                                            class="btn text-primary border-primary border hover:bg-primary hover:text-white">Anmelden</button>
+                                    </div>
 
-                    <div class="card hover:shadow-2xl">
-                        <img src="img/cover.jpeg" alt="buchcover" class="w-full h-32 sm:h-48 object-cover">
-                        <div class="m-4">
-                            <span class="font-bold">Suppe</span>
-                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="badge">
-                            <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span>25 mins</span>
-                        </div>
-                    </div>
-
-                    <div class="card hover:shadow-2xl">
-                        <img src="img/cover.jpeg" alt="noodles" class="w-full h-32 sm:h-48 object-cover">
-                        <div class="m-4">
-                            <span class="font-bold">Noodles</span>
-                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
-                        </div>
-                        <div class="badge">
-                            <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span>25 mins</span>
-                        </div>
-                    </div>
-
-                    <div class="card hover:shadow-2xl">
-                        <img src="img/cover.jpeg" alt="curry" class="w-full h-32 sm:h-48 object-cover">
-                        <div class="m-4">
-                            <span class="font-bold">Curry</span>
-                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
-                        </div>
-                        <div class="badge">
-                            <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span>25 mins</span>
-                        </div>
-                    </div>
-                </div>
-
-                <h4 class="mt-12 pb-2 border-b border-blue-200">Most popular</h4>
-                <div class="mt-8">
-                    <!-- cards go here-->
-                    <div class="flex justify-center">
-                        <div
-                            class="bg-secondary-100 text-secondary-200 btn hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-1000">
-                            Load more</div>
                     </div>
                 </div>
             </div>
