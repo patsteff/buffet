@@ -29,7 +29,7 @@
                 <ul class="text-md md:text-xl mt-2 hidden md:block" id="menu">
                     <li class="text-gray-800 py-1">
                         <a href="#" class="px-4 flex justify-end border-r-4 border-primary">
-                            <span>Home</span>
+                            <span>Start</span>
                             <svg class="w-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -76,31 +76,58 @@
         </div> <!-- end nav -->
 
         <main class="md:col-span-4">
-            <div class="min-h-screen md:bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
-                <div class="relative py-3 sm:max-w-xl sm:mx-auto">
-                    <div
-                        class="absolute inset-0 bg-gradient-to-r from-primary to-darkerred shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
-                    </div>
-                    <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
-                        <div class="max-w-md mx-auto">
-                            <div>
-                                <img src="img/cover.jpeg" class="h-auto object-cover" />
-                            </div>
-                            <div class="divide-y divide-gray-200">
-                                <div class="py-8 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
-                                    <p class="text-bold">Sie sind an unserem Buchprojekt interessiert?</p>
-                                    <p>Wir halten Sie auf dem Laufenden sobald es verfügbar ist:</p>
-                                    <div class="flex">
-                                        <input class="border p-2 h-auto w-100 text-sm mr-2" type="email"
-                                            placeholder="E-Mail">
-                                        <button id="submit"
-                                            class="btn text-primary border-primary border hover:bg-primary hover:text-white">Anmelden</button>
+            <!-- start section -->
+            <section id="start">
+                <div class="min-h-screen md:bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
+                    <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-primary to-darkerred shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
+                        </div>
+                        <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
+                            <div class="max-w-md mx-auto">
+                                <div>
+                                    <img src="img/cover.jpeg" class="h-auto object-cover" />
+                                </div>
+                                <div class="divide-y divide-gray-200">
+                                    <div class="py-8 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
+                                        <p class="text-bold">Sie sind an unserem Buchprojekt interessiert?</p>
+                                        <p>Wir halten Sie auf dem Laufenden sobald es verfügbar ist:</p>
+                                        <div class="flex">
+                                            <input class="border p-2 h-auto w-100 text-sm mr-2" type="email"
+                                                placeholder="E-Mail">
+                                            <button id="submit"
+                                                class="btn text-primary border-primary border hover:bg-primary hover:text-white">Anmelden</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
+            <section id="about">
+                <div>
+                    <h2>Über uns</h2>
+                    <p>Wir sind drei Schwestern aus Goldau und möchten die Geschichten unserer Grossmutter Silvia
+                        Steffen-Simon in einem Buch veröffentlichen. 22 Jahre wirteten unsere Grosseltern im
+                        Bahnhofbuffet
+                        Arth-Goldau. Er als Küchenchef, sie zuständig für das Büro und vor allem als Wirtin. Es sind die
+                        unglaublich spannenden
+                        Geschichten, welche unsere Grossmutter heute noch sehr lebendig erzählt. Im Zuge der Corona
+                        Pandemie fand sie Zeit, diese
+                        Erinnerungen aufzuschreiben.
+                    </p>
+                </div>
+            </section>
+            <section id="support">
+                <h2>Unterstützung</h2>
+                <p> SZKB, Gemeinde Arth, Kanton Schwyz
+                </p>
+            </section>
+            <section id="contact">
+                <h2>Kontaktformular</h2>
+            </section>
+
         </main>
     </div>
     <script src="index.js"></script>
