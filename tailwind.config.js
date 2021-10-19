@@ -9,7 +9,11 @@ module.exports = {
           100: '#E2E2D5',
           200: '#888883'
       }, 
-        darkerred: '#c55a4bff'
+        buffetred: '#af380c',
+        buffetgrey: {
+          200: '#fafafa',
+          300: '#d4d4d4'
+        }
     },
     fontFamily: {
       body: ['Nunito']

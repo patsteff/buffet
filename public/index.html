@@ -11,8 +11,8 @@
 </head>
 
 <body class="text-gray-600 font-body">
-    <div class="grid md:grid-cols-5">
-        <div class="md:col-span-1 md:flex md:justify-end">
+    <div class="grid md:grid-cols-5 bg-buffetgrey-300">
+        <div class="md:col-span-1 md:flex md:justify-end ">
             <nav class="text-right">
                 <div class="flex justify-between md:justify-end items-center">
                     <h1 class="font-bold uppercase p-4">
@@ -26,7 +26,7 @@
                         </svg>
                     </div>
                 </div>
-                <ul class="text-md md:text-xl mt-2 hidden md:block" id="menu">
+                <ul class="text-md md:text-l mt-2 hidden md:block" id="menu">
                     <li class="text-gray-800 py-1">
                         <a href="#" class="px-4 flex justify-end border-r-4 border-primary">
                             <span>Start</span>
@@ -78,31 +78,22 @@
         <main class="md:col-span-4">
             <!-- start section -->
             <section id="start">
-                <div class="min-h-screen md:bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
-                    <div class="relative py-3 sm:max-w-xl sm:mx-auto">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-r from-primary to-darkerred shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
-                        </div>
-                        <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
-                            <div class="max-w-md mx-auto">
-                                <div>
-                                    <img src="img/cover.jpeg" class="h-auto object-cover" />
-                                </div>
-                                <div class="divide-y divide-gray-200">
-                                    <div class="py-8 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
-                                        <p class="text-bold">Sie sind an unserem Buchprojekt interessiert?</p>
-                                        <p>Wir halten Sie auf dem Laufenden sobald es verfügbar ist:</p>
-                                        <div class="flex">
-                                            <input class="border p-2 h-auto w-100 text-sm mr-2" type="email"
-                                                placeholder="E-Mail">
-                                            <button id="submit"
-                                                class="btn text-primary border-primary border hover:bg-primary hover:text-white">Anmelden</button>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="min-h-screen md:bg-gray-100 flex flex-col top-0">
+
+                    <div>
+                        <img src="img/einkehr.png" class="h-auto object-cover" />
+                        <div class="text-gray-700 sm:text-lg ">
+                            <p class="text-bold">Sie sind an unserem Buchprojekt interessiert?</p>
+                            <p>Wir halten Sie auf dem Laufenden sobald es verfügbar ist:</p>
+                            <div class="flex">
+                                <input class="border p-2 h-auto w-100 text-sm mr-2" type="email" placeholder="E-Mail">
+                                <button id="submit"
+                                    class="btn text-primary border-primary border hover:bg-primary hover:text-white">Anmelden</button>
                             </div>
                         </div>
                     </div>
+
+
                 </div>
             </section>
             <section id="about">
