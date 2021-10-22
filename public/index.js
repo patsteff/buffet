@@ -12,3 +12,6 @@ burger.addEventListener('click', () => {
 submitEmail.addEventListener('click', ()=> {
     console.log("clicked submit button");
 })
+
+console.log(window.screen.height);
+console.log(window.screen.width);
