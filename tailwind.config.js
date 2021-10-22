@@ -11,7 +11,7 @@ module.exports = {
       }, 
         buffetred: '#af380c',
         buffetgrey: {
-          200: '#fafafa',
+          200: '#e1e1e1',
           300: '#d4d4d4'
         }
     },

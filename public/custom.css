@@ -1,0 +1,9 @@
+.einkehrimage {
+    background-image: url('img/einkehr_sm.jpg');
+}
+
+@media (min-width: 640px) {
+    .einkehrimage {
+        background-image: url('img/einkehr.jpg');
+    }
+}
