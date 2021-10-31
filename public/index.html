@@ -13,9 +13,6 @@
 
 <body class="text-gray-600 font-body">
 
-
-
-
     <nav class="bg-buffetgrey-200">
         <div class="md:max-w-6xl border border-red-400 mx-auto">
             <div class="flex justify-between py-2 items-center">
@@ -23,8 +20,15 @@
                 <div class="">
                     <a href="/" class="uppercase font-bold text-md md:text-xl hover:text-gray-700">Einkehr</a>
                 </div>
+                <div class="px-4 cursor-pointer md:hidden" id="burger">
+                    <svg class="w-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </div>
                 <!-- primary nav -->
-                <div class="flex space-x-8 text-lg items-center hover:text-xl">
+                <div class="hidden md:flex md:space-x-8 text-lg md:items-center hover:text-xl">
                     <a class="hover:font-bold hover:bg-buffetgrey-300 p-2 rounded transition duration-300"
                         href="#">Über</a>
                     <a class="hover:font-bold hover:bg-buffetgrey-300 p-2 rounded transition duration-300"
