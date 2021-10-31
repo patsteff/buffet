@@ -12,135 +12,111 @@
 </head>
 
 <body class="text-gray-600 font-body">
-    <div class="grid md:grid-cols-5 ">
-        <div class="md:col-span-1 md:flex md:justify-end bg-buffetgrey-300">
-            <nav class="text-right">
-                <div class="flex justify-between md:justify-end items-center">
-                    <h1 class="font-bold uppercase p-4">
-                        <a href="/" class="text-md md:text-xl hover:text-gray-700">Einkehr</a>
-                    </h1>
-                    <div class="px-4 cursor-pointer md:hidden" id="burger">
-                        <svg class="w-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                    </div>
+
+    <nav class="bg-buffetgrey-200">
+        <div class="md:max-w-6xl px-2 border border-red-400 mx-auto">
+            <div class="flex justify-between py-2 md:items-center">
+                <!-- logo -->
+                <div class="">
+                    <a href="/" class="uppercase font-bold text-md md:text-xl hover:text-gray-700">Einkehr</a>
                 </div>
-                <ul class="text-md md:text-l mt-2 hidden md:block" id="menu">
-                    <li class="text-gray-800 py-1">
-                        <a href="#" class="px-4 flex justify-end border-r-4 border-buffetred">
-                            <span>Start</span>
-                            <svg class="w-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
-                                </path>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="py-1">
-                        <a href="#" class="px-4 flex justify-end border-r-4 border-white">
-                            <span>Einkehr</span>
-                            <svg class="w-5 ml-2" fill="currentColor" viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z">
-                                </path>
-                            </svg>
+                <div class="px-4 cursor-pointer md:hidden" id="burger">
+                    <svg class="w-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <div class="hidden md:flex md:space-x-8 text-lg md:items-center">
+                    <a class="hover:font-bold md:hover:bg-buffetgrey-300 md:p-2 rounded transition duration-300"
+                        href="#">Über</a>
+                    <a class="hover:font-bold md:hover:bg-buffetgrey-300 md:p-2 rounded transition duration-300"
+                        href="#">Unterstützung</a>
+                    <a class="hover:font-bold md:hover:bg-buffetgrey-300 md:p-2 rounded transition duration-300"
+                        href="#">Kontakt</a>
+                </div>
+            </div>
+            <!-- primary nav -->
+            <div class="hidden md:flex md:space-x-8 text-lg md:items-center" id="menu">
+                <a class="block md:hidden hover:font-bold md:hover:bg-buffetgrey-300 md:p-2 rounded transition duration-300"
+                    href="#">Über</a>
+                <a class="block md:hidden hover:font-bold md:hover:bg-buffetgrey-300 md:p-2 rounded transition duration-300"
+                    href="#">Unterstützung</a>
+                <a class="block md:hidden hover:font-bold md:hover:bg-buffetgrey-300 md:p-2 rounded transition duration-300"
+                    href="#">Kontakt</a>
+            </div>
+        </div>
+        <!-- mobile -->
+    </nav>
+    <!-- end nav -->
 
-                        </a>
-                    </li>
-                    <li class="py-1">
-                        <a href="#" class="px-4 flex justify-end border-r-4 border-white">
-                            <span>Unterstützung</span>
-                            <svg class="w-5 ml-2" fill="currentColor" viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="py-1">
-                        <a href="#" class="px-4 flex justify-end border-r-4 border-white">
-                            <span>Kontakt</span>
-                            <svg class="w-5 ml-2" fill="currentColor" viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div> <!-- end nav -->
 
-        <main class="md:col-span-4">
-            <!-- start section -->
-            <section id="start">
-                <div class="flex-col top-0">
-                    <div
-                        class="w-full min-h-screen bg-no-repeat bg-cover bg-bottom bg-fixed flex flex-col md:justify-center justify-end einkehrimage">
-                        <div class="bg-white bg-opacity-80 md:bg-opacity-0">
-                            <div class="m-5">
-                                <p class="font-bold text-xl">Sie sind an unserem Buch interessiert?</p>
-                                <p class="text-lg">Wir halten Sie auf dem Laufenden sobald es verfügbar ist:</p>
-                                <div class="flex my-5">
-                                    <input class="border rounded-md p-2 h-auto w-100 text-md" type="email"
-                                        placeholder="E-Mail">
-                                    <button id="submit"
-                                        class="btn text-buffetred border-buffetred text-md border hover:bg-buffetred hover:text-white mx-2">Anmelden</button>
-                                </div>
 
+    <main class="">
+        <!-- start section -->
+        <section id="start">
+            <div class="flex-col top-0">
+                <div
+                    class="w-full min-h-screen bg-no-repeat bg-cover bg-bottom bg-fixed flex flex-col md:justify-center justify-end einkehrimage">
+                    <div class="bg-white bg-opacity-80 md:bg-opacity-0">
+                        <div class="m-5">
+                            <p class="font-bold text-xl">Sie sind an unserem Buch interessiert?</p>
+                            <p class="text-lg">Wir halten Sie auf dem Laufenden sobald es verfügbar ist:</p>
+                            <div class="flex my-5">
+                                <input class="border rounded-md p-2 h-auto w-100 text-md" type="email"
+                                    placeholder="E-Mail">
+                                <button id="submit"
+                                    class="btn text-buffetred border-buffetred text-md border hover:bg-buffetred hover:text-white mx-2">Anmelden</button>
                             </div>
-                        </div>
 
-                    </div>
-            </section>
-
-            <section id="about">
-                <div class="m-5">
-                    <h2 class="font-bold">Das Buchprojekt</h2>
-                    <blockquote class="my-5"><span class="block">Liebe Silvia
-                        </span>
-                        Ich lese in der Zeitung von Dir und das bewegt mich sehr. Schön, dass Du den Abschluss des
-                        Bahnhofbuffetbetriebes Goldau der langen Ära Simon, zusammen mit Herrn Gemahl, so kompetent
-                        innehattest. Viel hast du erfahren, gelernt und vielleicht auch geschluckt. <span
-                            class="block italic">Pauline Fischler, 2001
-
-                        </span> </blockquote>
-                    <p>
-                        Silvia und Rudolf Steffen-Simon vollendeten im Jahr 2000, was die Familie Simon drei
-                        Generationen vor ihnen begann. Über 100 Jahre war das Bahnhofbuffet Arth-Goldau Schauplatz
-                        unzähliger Geschehnisse. Kehren Sie ein in Geschichten voller alltäglicher Freude, Leid und
-                        Menschlichkeit.
-                    </p>
-                </div>
-            </section>
-            <section id="support" class="bg-buffetgrey-200">
-                <div class="m-5">
-                    <h2 class="font-bold">Unterstützung</h2>
-                    <div class="container grid grid-cols-3 gap-2 mx-auto">
-                        <div class="w-full rounded">
-                            <img src="img/logo_szkb.jpg" alt="Logo SZK">
-                        </div>
-                        <div class="w-full rounded">
-                            <img src="img/logo_arth.jpg" alt="Logo SZK">
-                        </div>
-                        <div class="w-full rounded">
-                            <img src="img/logo_kt_sz.jpg" alt="Logo SZK">
                         </div>
                     </div>
-                    <p> SZKB, Gemeinde Arth, Kanton Schwyz
-                    </p>
+
                 </div>
-            </section>
-            <section id="contact">
-                <h2>Kontaktformular</h2>
-            </section>
-        </main>
-    </div>
+        </section>
+
+        <section id="about">
+            <div class="m-5">
+                <h2 class="font-bold">Das Buchprojekt</h2>
+                <blockquote class="my-5"><span class="block">Liebe Silvia
+                    </span>
+                    Ich lese in der Zeitung von Dir und das bewegt mich sehr. Schön, dass Du den Abschluss des
+                    Bahnhofbuffetbetriebes Goldau der langen Ära Simon, zusammen mit Herrn Gemahl, so kompetent
+                    innehattest. Viel hast du erfahren, gelernt und vielleicht auch geschluckt. <span
+                        class="block italic">Pauline Fischler, 2001
+
+                    </span> </blockquote>
+                <p>
+                    Silvia und Rudolf Steffen-Simon vollendeten im Jahr 2000, was die Familie Simon drei
+                    Generationen vor ihnen begann. Über 100 Jahre war das Bahnhofbuffet Arth-Goldau Schauplatz
+                    unzähliger Geschehnisse. Kehren Sie ein in Geschichten voller alltäglicher Freude, Leid und
+                    Menschlichkeit.
+                </p>
+            </div>
+        </section>
+        <section id="support" class="bg-buffetgrey-200">
+            <div class="m-5">
+                <h2 class="font-bold">Unterstützung</h2>
+                <div class="container grid grid-cols-3 gap-2 mx-auto">
+                    <div class="w-full rounded">
+                        <img src="img/logo_szkb.jpg" alt="Logo SZK">
+                    </div>
+                    <div class="w-full rounded">
+                        <img src="img/logo_arth.jpg" alt="Logo SZK">
+                    </div>
+                    <div class="w-full rounded">
+                        <img src="img/logo_kt_sz.jpg" alt="Logo SZK">
+                    </div>
+                </div>
+                <p> SZKB, Gemeinde Arth, Kanton Schwyz
+                </p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Kontaktformular</h2>
+        </section>
+    </main>
+
     <script src="index.js"></script>
 </body>
 
