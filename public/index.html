@@ -11,116 +11,134 @@
 
 </head>
 
-<body class="text-gray-600 font-body">
-
-    <nav class="bg-buffetgrey-200">
-        <div class="md:max-w-6xl px-2 border border-red-400 mx-auto">
-            <div class="flex justify-between py-2 md:items-center">
-                <!-- logo -->
-                <div class="">
-                    <a href="/" class="uppercase font-bold text-md md:text-xl hover:text-gray-700">Einkehr</a>
+<body class="text-gray-600 font-body ">
+    <div class="md:py-16 py-10">
+        <nav class="bg-buffetgrey-300 fixed left-0 right-0 top-0 h-10 md:h-16">
+            <div class="md:mx-20 md:px-2 border border-red-400 mx-auto">
+                <div class="flex justify-between py-2 items-center">
+                    <!-- logo -->
+                    <div class="">
+                        <a href="/" class="uppercase font-bold text-md md:text-xl hover:text-gray-700">Einkehr</a>
+                    </div>
+                    <div class="px-4 cursor-pointer md:hidden" id="burger">
+                        <svg class="w-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <div class="hidden md:flex md:space-x-8 text-lg md:items-center">
+                        <a class="hover:font-bold md:hover:bg-buffetgrey-300 md:p-2 rounded transition duration-300"
+                            href="#">Über</a>
+                        <a class="hover:font-bold md:hover:bg-buffetgrey-300 md:p-2 rounded transition duration-300"
+                            href="#">Unterstützung</a>
+                        <a class="hover:font-bold md:hover:bg-buffetgrey-300 md:p-2 rounded transition duration-300"
+                            href="#">Kontakt</a>
+                    </div>
                 </div>
-                <div class="px-4 cursor-pointer md:hidden" id="burger">
-                    <svg class="w-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </div>
-                <div class="hidden md:flex md:space-x-8 text-lg md:items-center">
-                    <a class="hover:font-bold md:hover:bg-buffetgrey-300 md:p-2 rounded transition duration-300"
+                <!-- mobile -->
+                <div class="hidden text-lg bg-buffetgrey-300 w-full" id="menu">
+                    <a class="block md:hidden hover:font-bold hover:bg-buffetgrey-300 md:p-2 rounded transition duration-300"
                         href="#">Über</a>
-                    <a class="hover:font-bold md:hover:bg-buffetgrey-300 md:p-2 rounded transition duration-300"
+                    <a class="block md:hidden hover:font-bold hover:bg-buffetgrey-300 md:p-2 rounded transition duration-300"
                         href="#">Unterstützung</a>
-                    <a class="hover:font-bold md:hover:bg-buffetgrey-300 md:p-2 rounded transition duration-300"
+                    <a class="block md:hidden hover:font-bold hover:bg-buffetgrey-300 md:p-2 rounded transition duration-300"
                         href="#">Kontakt</a>
                 </div>
             </div>
-            <!-- primary nav -->
-            <div class="hidden md:flex md:space-x-8 text-lg md:items-center" id="menu">
-                <a class="block md:hidden hover:font-bold md:hover:bg-buffetgrey-300 md:p-2 rounded transition duration-300"
-                    href="#">Über</a>
-                <a class="block md:hidden hover:font-bold md:hover:bg-buffetgrey-300 md:p-2 rounded transition duration-300"
-                    href="#">Unterstützung</a>
-                <a class="block md:hidden hover:font-bold md:hover:bg-buffetgrey-300 md:p-2 rounded transition duration-300"
-                    href="#">Kontakt</a>
-            </div>
-        </div>
-        <!-- mobile -->
-    </nav>
-    <!-- end nav -->
 
-    <main class="">
-        <!-- start section -->
-        <section id="start">
+        </nav>
+        <!-- end nav -->
 
-            <div
-                class=" top-0 w-full min-h-screen bg-no-repeat bg-cover bg-bottom bg-fixed flex md:justify-center justify-end einkehrimage">
-                <div class="max-w-6xl">
-                    <div class="flex justify-between border border-yellow-400 ">
-                        <div class="bg-white bg-opacity-80 md:bg-opacity-0 border border-red-400 ">
-                            <div class="">
-                                <p class="font-bold text-xl">Sie sind an unserem Buch interessiert?</p>
-                                <p class="text-lg">Wir halten Sie auf dem Laufenden sobald es verfügbar ist:</p>
-                                <div class="flex my-5">
+        <main class="">
+            <!-- start section -->
+            <section id="start">
+
+                <div class="w-full min-h-screen bg-no-repeat bg-cover bg-center einkehrimage flex items-center">
+
+                    <div class=" mx-20 flex items-center">
+                        <div
+                            class="bg-white bg-opacity-80 md:bg-opacity-0 border border-red-400 grid lg:grid-cols-2 md:grid-cols-3 gap-0">
+                            <div class="md:col-span-2 flex flex-col">
+                                <h2 class="text-3xl mb-5"><span class="uppercase font-bold text-4xl">Einkehr</span> von
+                                    Silvia
+                                    Steffen-Simon
+                                </h2>
+
+                                <p class="text-3xl mb-2">Erinnerungen der letzten Wirtin ans Bahnhofbuffet
+                                    Arth-Goldau
+                                </p>
+                                <p class="text-xl mb-2">Interessiert? Wir informieren Sie, sobald das Buch verfügbar
+                                    ist:</p>
+                                <div class="flex mb-3">
                                     <input class="border rounded-md p-2 h-auto w-100 text-md" type="email"
                                         placeholder="E-Mail">
                                     <button id="submit"
                                         class="btn text-buffetred border-buffetred text-md border hover:bg-buffetred hover:text-white mx-2">Anmelden</button>
                                 </div>
                             </div>
+                            <div class="md:col-span-1"></div>
                         </div>
 
                     </div>
+
+
                 </div>
 
+            </section>
 
+            <section id="about">
+                <div class="md:mx-20 my-20 lg:my-36 grid grid-cols-1 lg:grid-cols-2 gap-10">
+                    <div class="flex flex-col justify-center">
+                        <blockquote class="my-5 italic">
+                            "Bahnhofbuffets waren ein Teil der Schweizer Reisekultur. Neben jungen Soldaten, frisch
+                            verheirateten Paaren und Grosseltern mit Grosskindern sassen im Buffet Randständige wie
+                            Drogensüchtige. Ich erinnere mich gut an das, was mir mein Vater schon früh beibrachte. Er
+                            sagte mir stets, dass man als Wirt nicht in eine politische Partei sollte, besser sei es,
+                            etwas Distanz zu wahren. Da sein für die Leute, aber sich nicht einmischen, so wurde ich
+                            erzogen. In all den Jahren im Bahnhofbuffet wurde ich mit vielem konfrontiert, vernahm viel
+                            persönliches von den Menschen. Am Sonntagmittag ging ich zwischen den Tischen hindurch und
+                            sagte Grüezi zu all den Gästen. Zu hören bekam ich Geschichten von Depressionen, von
+                            verstorbenen Verwandten, von Krankheiten. Das Buffet war für viele ein Ort, wo immer jemand
+                            zuhörte. Silvia Steffen-Simon"
 
-            </div>
-
-        </section>
-
-        <section id="about">
-            <div class="m-5">
-                <h2 class="font-bold">Das Buchprojekt</h2>
-                <blockquote class="my-5"><span class="block">Liebe Silvia
-                    </span>
-                    Ich lese in der Zeitung von Dir und das bewegt mich sehr. Schön, dass Du den Abschluss des
-                    Bahnhofbuffetbetriebes Goldau der langen Ära Simon, zusammen mit Herrn Gemahl, so kompetent
-                    innehattest. Viel hast du erfahren, gelernt und vielleicht auch geschluckt. <span
-                        class="block italic">Pauline Fischler, 2001
-
-                    </span> </blockquote>
-                <p>
-                    Silvia und Rudolf Steffen-Simon vollendeten im Jahr 2000, was die Familie Simon drei
-                    Generationen vor ihnen begann. Über 100 Jahre war das Bahnhofbuffet Arth-Goldau Schauplatz
-                    unzähliger Geschehnisse. Kehren Sie ein in Geschichten voller alltäglicher Freude, Leid und
-                    Menschlichkeit.
-                </p>
-            </div>
-        </section>
-        <section id="support" class="bg-buffetgrey-200">
-            <div class="m-5">
-                <h2 class="font-bold">Unterstützung</h2>
-                <div class="container grid grid-cols-3 gap-2 mx-auto">
-                    <div class="w-full rounded">
-                        <img src="img/logo_szkb.jpg" alt="Logo SZK">
+                        </blockquote>
+                        <p>
+                            22 Jahre wirteten Silvia Steffen-Simon und ihr Mann Rudolf im Bahnhofbuffet Arth-Goldau. Im
+                            Jahr 2000 vollendeten sie, was die Familie Simon drei Generationen vor ihnen begann. Über
+                            100 Jahre war das Bahnhofbuffet Arth-Goldau Schauplatz unzähliger Geschehnisse. Kehren Sie
+                            ein in Geschichten voller alltäglicher Freude, Leid und Menschlichkeit, erzählt von der
+                            letzten Wirtin Silvia Steffen-Simon.
+                        </p>
                     </div>
-                    <div class="w-full rounded">
-                        <img src="img/logo_arth.jpg" alt="Logo SZK">
+                    <div class="flex flex-col justify-center">
+                        <img src="img/restaurant_smaller.jpg" alt="Picture of restaurant">
                     </div>
-                    <div class="w-full rounded">
-                        <img src="img/logo_kt_sz.jpg" alt="Logo SZK">
-                    </div>
+
                 </div>
-                <p> SZKB, Gemeinde Arth, Kanton Schwyz
-                </p>
-            </div>
-        </section>
-        <section id="contact">
-            <h2>Kontaktformular</h2>
-        </section>
-    </main>
+            </section>
+            <section id="support" class="bg-buffetgrey-200">
+                <div class="md:mx-20 my-20 md:my-36">
+                    <h2 class="font-bold">Unterstützung</h2>
+                    <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto">
+                        <div class="w-full rounded">
+                            <img src="img/logo_szkb.jpg" alt="Logo SZK">
+                        </div>
+                        <div class="w-full rounded">
+                            <img src="img/logo_arth.jpg" alt="Logo SZK">
+                        </div>
+                        <div class="w-full rounded">
+                            <img src="img/logo_kt_sz.jpg" alt="Logo SZK">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section id="contact">
+                <h2>Kontaktformular</h2>
+            </section>
+        </main>
+    </div>
 
     <script src="index.js"></script>
 </body>
