@@ -9,7 +9,7 @@ module.exports = {
           100: '#E2E2D5',
           200: '#888883'
       }, 
-        buffetred: '#af380c',
+        buffetred: '#c75538',
         buffetgrey: {
           200: '#e1e1e1',
           300: '#d4d4d4'
