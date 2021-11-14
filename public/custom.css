@@ -1,9 +1,4 @@
 .einkehrimage {
-    background-image: url('img/einkehr_sm.jpg');
+    max-width: 400px;
 }
 
-@media (min-width: 640px) {
-    .einkehrimage {
-        background-image: url('img/einkehr.jpg');
-    }
-}
