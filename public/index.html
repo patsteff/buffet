@@ -15,7 +15,7 @@
 </head>
 
 <body class="text-gray-600 font-body">
-    <header class=" top-0 z-50">
+    <header class="fixed top-0 z-50">
         <nav class="bg-buffetgrey-200 fixed w-full order-4 border-indigo-200">
             <div class="md:mx-10 mx-auto px-4">
                 <div class="flex justify-between ">
@@ -23,17 +23,20 @@
                     <div class="flex space-x-4">
                         <!-- logo -->
                         <div>
-                            <a href="#"
-                                class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900 text-md md:text-lg lg:text-2xl">
+                            <a href="#" class="flex items-center py-5 px-2 text-md md:text-lg lg:text-2xl">
                                 <span class="font-bold uppercase ">Einkehr</span>
                             </a>
                         </div>
 
                         <!-- primary nav -->
                         <div class="hidden md:flex items-center space-x-1 text-md md:text-lg lg:text-2xl ">
-                            <a href="#" class="py-5 px-3 hover:text-gray-900">Das Buch</a>
-                            <a href="#" class="py-5 px-3 hover:text-gray-900">Unterstützung</a>
-                            <a href="#" class="py-5 px-3 hover:text-gray-900">Kontakt</a>
+                            <a href="#about"
+                                class="py-5 px-3 hover:font-bold md:hover:bg-buffetgrey-300 md:p-2 rounded transition duration-300">Das
+                                Buch</a>
+                            <a href="#support"
+                                class="py-5 px-3 hover:font-bold md:hover:bg-buffetgrey-300 md:p-2 rounded transition duration-300">Unterstützung</a>
+                            <a href="#contact"
+                                class="py-5 px-3 hover:font-bold md:hover:bg-buffetgrey-300 md:p-2 rounded transition duration-300">Kontakt</a>
                         </div>
                     </div>
 
@@ -53,15 +56,15 @@
 
             <!-- mobile menu -->
             <div class="mobile-menu hidden md:hidden" id="menu">
-                <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Das Buch</a>
-                <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Unterstützung</a>
-                <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Kontakt</a>
+                <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-200">Das Buch</a>
+                <a href="#support" class="block py-2 px-4 text-sm hover:bg-gray-200">Unterstützung</a>
+                <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-200">Kontakt</a>
             </div>
         </nav>
     </header>
     <!-- end nav -->
 
-    <main class="">
+    <main class="relative">
         <!-- start section -->
         <section id="start">
             <div
