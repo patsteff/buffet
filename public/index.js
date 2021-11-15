@@ -1,6 +1,6 @@
 const burger = document.querySelector("#burger");
 const menu = document.querySelector("#menu");
-const submitEmail = document.querySelector("#submit");
+
 
 burger.addEventListener('click', () => {
     if(menu.classList.contains('hidden')) {
@@ -8,9 +8,6 @@ burger.addEventListener('click', () => {
     } else {
         menu.classList.add('hidden');
     }
-})
-submitEmail.addEventListener('click', ()=> {
-    console.log("clicked submit button");
 })
 
 console.log(window.screen.height);

@@ -15,157 +15,168 @@
 </head>
 
 <body class="text-gray-600 font-body">
-    <div class="py-10">
-        <nav class="bg-buffetred text-white fixed left-0 right-0 top-0">
-            <div class="md:mx-20 mx-auto">
-                <div class="flex justify-between py-2 items-center">
-                    <!-- logo -->
-                    <div class="">
-                        <a href="#start"
-                            class="px-2 md:px-0 uppercase font-bold text-md md:text-lg lg:text-xl hover:text-gray-700">Einkehr</a>
+    <header class="fixed top-0 z-50">
+        <nav class="bg-buffetgrey-200 fixed w-full">
+            <div class="md:mx-10 mx-auto px-4">
+                <div class="flex justify-between ">
+
+                    <div class="flex space-x-4">
+                        <!-- logo -->
+                        <div>
+                            <a href="#" class="flex items-center py-5 px-2 text-md md:text-lg lg:text-2xl">
+                                <span class="font-bold uppercase ">Einkehr</span>
+                            </a>
+                        </div>
+
+                        <!-- primary nav -->
+                        <div class="hidden md:flex items-center space-x-1 text-md md:text-lg lg:text-2xl ">
+                            <a href="#about"
+                                class="py-5 px-3 hover:font-bold md:hover:bg-buffetgrey-300 md:p-2 rounded transition duration-300">Das
+                                Buch</a>
+                            <a href="#support"
+                                class="py-5 px-3 hover:font-bold md:hover:bg-buffetgrey-300 md:p-2 rounded transition duration-300">Unterstützung</a>
+                            <a href="#contact"
+                                class="py-5 px-3 hover:font-bold md:hover:bg-buffetgrey-300 md:p-2 rounded transition duration-300">Kontakt</a>
+                        </div>
                     </div>
-                    <div class="px-2 cursor-pointer md:hidden" id="burger">
-                        <svg class="w-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                clip-rule="evenodd"></path>
-                        </svg>
+
+                    <!-- mobile button goes here -->
+                    <div class="md:hidden flex items-center">
+                        <button class="mobile-menu-button" id="burger">
+                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
                     </div>
-                    <div class="hidden md:flex md:space-x-8 text-md md:text-lg lg:text-2xl md:items-center">
-                        <a class="hover:font-bold md:hover:bg-buffetgrey-300 md:p-2 rounded transition duration-300"
-                            href="#about">Das Buch</a>
-                        <a class="hover:font-bold md:hover:bg-buffetgrey-300 md:p-2 rounded transition duration-300"
-                            href="#support">Unterstützung</a>
-                        <a class="hover:font-bold md:hover:bg-buffetgrey-300 md:p-2 rounded transition duration-300"
-                            href="#contact">Kontakt</a>
-                    </div>
-                </div>
-                <!-- mobile -->
-                <div class="hidden text-lg bg-buffetgrey-300 w-full" id="menu">
-                    <a class="px-2 block md:hidden hover:font-bold hover:bg-buffetgrey-300 rounded transition duration-300"
-                        href="#about">Das Buch</a>
-                    <a class="px-2 block md:hidden hover:font-bold hover:bg-buffetgrey-300 rounded transition duration-300"
-                        href="#support">Unterstützung</a>
-                    <a class="px-2 block md:hidden hover:font-bold hover:bg-buffetgrey-300 rounded transition duration-300"
-                        href="#contact">Kontakt</a>
+
                 </div>
             </div>
+
+            <!-- mobile menu -->
+            <div class="mobile-menu hidden md:hidden" id="menu">
+                <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-200">Das Buch</a>
+                <a href="#support" class="block py-2 px-4 text-sm hover:bg-gray-200">Unterstützung</a>
+                <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-200">Kontakt</a>
+            </div>
         </nav>
-        <!-- end nav -->
+    </header>
+    <!-- end nav -->
 
-        <main class="right-0">
-            <!-- start section -->
-            <section id="start">
-                <div
-                    class="md-5 md:mx-20 w-full min-h-screen bg-buffetred flex justify-center md:justify-start border-2 border-indigo-600">
-                    <div class="grid grid-cols-2 gap-0">
-                        <div class="text-white flex flex-col justify-center">
-                            <h2 class="text-md md:text-3xl lg:text-4xl mb-2">Das Buch <span
-                                    class="uppercase font-bold text-md md:text-3xl lg:text-4xl">Einkehr</span> von
-                                Silvia
-                                Steffen-Simon
-                            </h2>
-                            <p class="text-md md:text-lg lg:text-3xl">Geplante Veröffentlichung
-                                Frühjahr 2022</p>
-                        </div>
+    <main class="">
+        <!-- start section -->
+        <section id="start ">
+            <div class="py-20 w-full bg-buffetred flex flex-col">
+                <div class="flex justify-center">
+                    <div class="shadow-2xl">
+                        <img class="einkehrimage" src="./img/einkehr.jpg" alt="Buch Cover Einkehr">
+                    </div>
 
-                        <div class="flex justify-center">
-                            <div class="shadow-2xl">
-                                <img class="einkehrimage" src="/public/img/einkehr.jpg" alt="Buch Cover Einkehr">
-                            </div>
+                </div>
+                <div class="flex flex-col pt-10">
+                    <div class="text-white flex flex-col justify-center items-center">
+                        <h2 class="text-md md:text-3xl lg:text-4xl mb-2">Das Buch <span
+                                class="uppercase font-bold text-md md:text-3xl lg:text-4xl">Einkehr</span> von
+                            Silvia
+                            Steffen-Simon
+                        </h2>
+                        <p class="text-md md:text-lg lg:text-3xl">Geplante Veröffentlichung
+                            Frühjahr 2022</p>
+                    </div>
 
-                        </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="">
+            <div class="mx-5 md:mx-20 py-20 lg:py-36 grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <div class="flex flex-col justify-center">
+                    <blockquote class="mb-5 italic text-md md:text-lg lg:text-2xl">
+                        "Bahnhofbuffets waren ein Teil der Schweizer Reisekultur. Neben jungen Soldaten, frisch
+                        verheirateten Paaren und Grosseltern mit Grosskindern sassen im Buffet Randständige wie
+                        Drogensüchtige. Ich erinnere mich gut an das, was mir mein Vater schon früh beibrachte. Er
+                        sagte mir stets, dass man als Wirt nicht in eine politische Partei sollte, besser sei es,
+                        etwas Distanz zu wahren. Da sein für die Leute, aber sich nicht einmischen, so wurde ich
+                        erzogen. In all den Jahren im Bahnhofbuffet wurde ich mit vielem konfrontiert, vernahm viel
+                        persönliches von den Menschen. Am Sonntagmittag ging ich zwischen den Tischen hindurch und
+                        sagte Grüezi zu all den Gästen. Zu hören bekam ich Geschichten von Depressionen, von
+                        verstorbenen Verwandten, von Krankheiten. Das Buffet war für viele ein Ort, wo immer jemand
+                        zuhörte."
+                    </blockquote>
+                    <p class="text-md md:text-lg lg:text-2xl">
+                        22 Jahre wirteten Silvia Steffen-Simon und ihr Mann Rudolf im Bahnhofbuffet Arth-Goldau. Im
+                        Jahr 2000 vollendeten sie, was die Familie Simon drei Generationen vor ihnen begann. Über
+                        100 Jahre war das Bahnhofbuffet Arth-Goldau Schauplatz unzähliger Geschehnisse. Kehren Sie
+                        ein in Geschichten voller alltäglicher Freude, Leid und Menschlichkeit, erzählt von der
+                        letzten Wirtin Silvia Steffen-Simon.
+                    </p>
+                </div>
+                <div class="flex flex-col justify-center">
+                    <img class="max-w-4xl" src="img/restaurant_smaller.jpg" alt="Picture of restaurant">
+                </div>
+            </div>
+        </section>
+
+        <section id="support" class="bg-buffetgrey-200 py-20 lg:py-36">
+            <div class="mx-5 md:mx-20 text-md md:text-lg">
+                <p class="mb-2 text-3xl lg:text-4xl">Unterstützung</p>
+                <p class="mb-5 lg:text-2xl lg:py-5">Wir sind drei Schwestern aus Goldau und veröffentlichen die
+                    Geschichten
+                    unserer
+                    Grossmutter. Nur
+                    dank zahlreichen Unterstützern kann unser Vorhaben in die Tat umgesetzt werden. Vielen Dank!</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
+
+                    <div class="w-full rounded flex justify-center">
+                        <a href="https://www.szkb.ch/" target="_blank">
+                            <img src="img/logo_szkb.jpg" alt="Logo SZKB">
+                        </a>
+                    </div>
+                    <div class="w-full rounded flex justify-center">
+                        <a href="http://www.arth.ch/de/" target="_blank">
+                            <img src="img/logo_arth.jpg" alt="Logo Gemeinde Arth">
+                        </a>
+                    </div>
+                    <div class="w-full rounded flex justify-center">
+                        <a href="https://www.sz.ch/" target="_blank">
+                            <img src="img/logo_kt_sz.jpg" alt="Logo Kanton Schwyz">
+                        </a>
+                    </div>
+                    <div class="w-full rounded flex justify-center">
+                        <a href="https://www.victorinox.com" target="_blank">
+                            <img src="img/logo_victorinox.jpg" alt="Logo Victorinox">
+                        </a>
+                    </div>
+                    <div class="w-full rounded flex justify-center">
+                        <a href="https://www.rigi.ch/" target="_blank">
+                            <img src="img/logo_rigi.jpg" alt="Logo Rigi">
+                        </a>
+                    </div>
+                    <div class="w-full rounded flex justify-center">
+                        <a href="https://www.schmidlin.ch" target="_blank">
+                            <img src="img/logo_schmidlin.jpg" alt="Logo Schmidlin">
+                        </a>
+                    </div>
+                    <div class="w-full rounded flex justify-center">
+                        <a href="https://karlbucher.ch/" target="_blank">
+                            <img src="img/logo_bucher_placeholder.jpg" alt="Logo Karl Bucher">
+                        </a>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="about" class="">
-                <div class="mx-5 md:mx-20 py-20 lg:py-36 grid grid-cols-1 lg:grid-cols-2 gap-10">
-                    <div class="flex flex-col justify-center">
-                        <blockquote class="mb-5 italic text-md md:text-lg lg:text-2xl">
-                            "Bahnhofbuffets waren ein Teil der Schweizer Reisekultur. Neben jungen Soldaten, frisch
-                            verheirateten Paaren und Grosseltern mit Grosskindern sassen im Buffet Randständige wie
-                            Drogensüchtige. Ich erinnere mich gut an das, was mir mein Vater schon früh beibrachte. Er
-                            sagte mir stets, dass man als Wirt nicht in eine politische Partei sollte, besser sei es,
-                            etwas Distanz zu wahren. Da sein für die Leute, aber sich nicht einmischen, so wurde ich
-                            erzogen. In all den Jahren im Bahnhofbuffet wurde ich mit vielem konfrontiert, vernahm viel
-                            persönliches von den Menschen. Am Sonntagmittag ging ich zwischen den Tischen hindurch und
-                            sagte Grüezi zu all den Gästen. Zu hören bekam ich Geschichten von Depressionen, von
-                            verstorbenen Verwandten, von Krankheiten. Das Buffet war für viele ein Ort, wo immer jemand
-                            zuhörte."
-                        </blockquote>
-                        <p class="text-md md:text-lg lg:text-2xl">
-                            22 Jahre wirteten Silvia Steffen-Simon und ihr Mann Rudolf im Bahnhofbuffet Arth-Goldau. Im
-                            Jahr 2000 vollendeten sie, was die Familie Simon drei Generationen vor ihnen begann. Über
-                            100 Jahre war das Bahnhofbuffet Arth-Goldau Schauplatz unzähliger Geschehnisse. Kehren Sie
-                            ein in Geschichten voller alltäglicher Freude, Leid und Menschlichkeit, erzählt von der
-                            letzten Wirtin Silvia Steffen-Simon.
-                        </p>
-                    </div>
-                    <div class="flex flex-col justify-center">
-                        <img class="max-w-4xl" src="img/restaurant_smaller.jpg" alt="Picture of restaurant">
-                    </div>
-                </div>
-            </section>
+        <section id="contact" class="my-10 md:my-20 flex justify-center">
+            <p class="text-3xl lg:text-4xl mx-5">Fragen? Schreiben Sie uns an info@einkehr.ch</p>
+        </section>
+        <footer class="mx-5 flex justify-center">
+            <div>Copyright &copy; Patricia Steffen, Ursina Steffen, Silvana Steffen 2021</div>
 
-            <section id="support" class="bg-buffetgrey-200 py-20 lg:py-36">
-                <div class="mx-5 md:mx-20 text-md md:text-lg">
-                    <p class="mb-2 text-3xl lg:text-4xl">Unterstützung</p>
-                    <p class="mb-5 lg:text-2xl lg:py-5">Wir sind drei Schwestern aus Goldau und veröffentlichen die
-                        Geschichten
-                        unserer
-                        Grossmutter. Nur
-                        dank zahlreichen Unterstützern kann unser Vorhaben in die Tat umgesetzt werden. Vielen Dank!</p>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
+        </footer>
+    </main>
 
-                        <div class="w-full rounded flex justify-center">
-                            <a href="https://www.szkb.ch/" target="_blank">
-                                <img src="img/logo_szkb.jpg" alt="Logo SZKB">
-                            </a>
-                        </div>
-                        <div class="w-full rounded flex justify-center">
-                            <a href="http://www.arth.ch/de/" target="_blank">
-                                <img src="img/logo_arth.jpg" alt="Logo Gemeinde Arth">
-                            </a>
-                        </div>
-                        <div class="w-full rounded flex justify-center">
-                            <a href="https://www.sz.ch/" target="_blank">
-                                <img src="img/logo_kt_sz.jpg" alt="Logo Kanton Schwyz">
-                            </a>
-                        </div>
-                        <div class="w-full rounded flex justify-center">
-                            <a href="https://www.victorinox.com" target="_blank">
-                                <img src="img/logo_victorinox.jpg" alt="Logo Victorinox">
-                            </a>
-                        </div>
-                        <div class="w-full rounded flex justify-center">
-                            <a href="https://www.rigi.ch/" target="_blank">
-                                <img src="img/logo_rigi.jpg" alt="Logo Rigi">
-                            </a>
-                        </div>
-                        <div class="w-full rounded flex justify-center">
-                            <a href="https://www.schmidlin.ch" target="_blank">
-                                <img src="img/logo_schmidlin.jpg" alt="Logo Schmidlin">
-                            </a>
-                        </div>
-                        <div class="w-full rounded flex justify-center">
-                            <a href="https://karlbucher.ch/" target="_blank">
-                                <img src="img/logo_bucher_placeholder.jpg" alt="Logo Karl Bucher">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="contact" class="my-10 md:my-20 flex justify-center">
-                <p class="text-3xl lg:text-4xl mx-5">Fragen? Schreiben Sie uns an info@einkehr.ch</p>
-            </section>
-            <footer class="mx-5 flex justify-center">
-                <div>Copyright &copy; Patricia Steffen, Ursina Steffen, Silvana Steffen 2021</div>
-
-            </footer>
-        </main>
-    </div>
 
     <script src="index.js"></script>
 
