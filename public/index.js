@@ -1,5 +1,7 @@
 const burger = document.querySelector("#burger");
 const menu = document.querySelector("#menu");
+const menuitem = document.querySelectorAll(".menuitem");
+console.log(menuitem);
 
 
 burger.addEventListener('click', () => {
@@ -9,6 +11,14 @@ burger.addEventListener('click', () => {
         menu.classList.add('hidden');
     }
 })
+
+menuitem.forEach(a => {
+    a.addEventListener('click', () => {
+        menu.classList.add('hidden');
+    }
+)}
+);
+
 
 console.log(window.screen.height);
 console.log(window.screen.width);

@@ -2,3 +2,13 @@
     max-width: 300px;
 }
 
+.einkehrcover {
+    background-image: url('img/book_cover_desktop.jpg');
+}
+
+/* @media (min-width: 640px) {
+    .einkehrcover {
+        background-image: url('img/einkehr.jpg');
+    }
+}
+ */
