@@ -8,25 +8,31 @@
     }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
     .einkehrimage {
         max-width: 900px;
     }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 768px) {
     .line-height-class {
-        line-height: 5rem;
+        line-height: 2.5rem;
     }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1024px) {
+    .line-height-class {
+        line-height: 4rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
     .line-height-class-small {
-        line-height: 3rem;
+        line-height: 2.5rem;
     }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1024px) {
     .bigger-logo {
         width: 550px;
     }
