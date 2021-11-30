@@ -16,8 +16,8 @@
 
 <body class="text-gray-600 font-body">
     <header class="fixed top-0 z-50">
-        <nav class="bg-buffetred text-white md:text-gray-600 md:bg-buffetgrey-300 fixed w-full h-16 top-0">
-            <div class="md:mx-10 mx-auto px-4">
+        <nav class="bg-buffetred text-white lg:text-gray-600 lg:bg-buffetgrey-300 fixed w-full h-16 top-0">
+            <div class="lg:mx-10 mx-auto px-4">
                 <div class="flex justify-between ">
 
                     <div class="flex space-x-4">
@@ -29,7 +29,7 @@
                         </div>
 
                         <!-- primary nav -->
-                        <div class="hidden md:flex items-center space-x-1 text-md md:text-lg lg:text-2xl ">
+                        <div class="hidden lg:flex items-center space-x-1 text-md md:text-lg lg:text-2xl ">
                             <a href="#about" class="py-5 px-3 hover:text-black ">Das
                                 Buch</a>
                             <a href="#support" class="py-5 px-3 hover:text-black">Unterstützung</a>
@@ -38,7 +38,7 @@
                     </div>
 
                     <!-- mobile button goes here -->
-                    <div class="md:hidden flex items-center">
+                    <div class="lg:hidden flex items-center">
                         <button class="mobile-menu-button" id="burger">
                             <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
@@ -52,7 +52,7 @@
             </div>
 
             <!-- mobile menu -->
-            <div class="bg-buffetred text-white mobile-menu hidden md:hidden" id="menu">
+            <div class="bg-buffetred text-white mobile-menu hidden lg:hidden" id="menu">
                 <a href="#about" class="block py-2 px-4 text-sm hover:text-black menuitem">Das Buch</a>
                 <a href="#support" class="block py-2 px-4 text-sm hover:text-black menuitem">Unterstützung</a>
                 <a href="#contact" class="block py-2 px-4 text-sm hover:text-black menuitem">Kontakt</a>
@@ -63,20 +63,19 @@
 
     <main class="">
         <!-- start section -->
-        <section class="mt-16" id="start">
+        <section class="mt-16 h-screen" id="start">
             <div
-                class="w-full bg-buffetred md:bg-buffetgrey-200 flex flex-col md:flex-row justify-around md:items-center h-screen">
-                <div class="flex justify-center md:items-center md:w-1/2 md:bg-buffetred h-screen">
+                class="w-full bg-buffetred flex flex-col lg:flex-row justify-center content-center items-center h-screen">
+                <div class="flex justify-center lg:items-center lg:w-1/2 lg:bg-buffetred ">
                     <div class="shadow-2xl">
                         <img class="einkehrimage" src="./img/einkehr.jpg" alt="Buch Cover Einkehr">
                     </div>
 
                 </div>
-                <div class="flex flex-col md:w-1/2 h-screen md:bg-buffetgrey-200 justify-center">
-                    <div
-                        class="text-white md:text-gray-600 flex flex-col justify-center items-center px-4 md:mx-10 block">
+                <div class="flex flex-col lg:w-1/2 lg:h-screen lg:bg-buffetgrey-200 justify-center">
+                    <div class="text-white lg:text-gray-600 flex flex-col justify-center items-center">
                         <h2
-                            class="text-xl md:font-bold md:text-3xl lg:text-4xl xl:text-5xl mb-2 md:mb-5 lg:md:mb-10 text-center line-height-class">
+                            class="text-xl md:font-bold md:text-3xl lg:text-4xl xl:text-5xl mb-2 lg:mb-5 xl:mb-10 text-center line-height-class">
                             Das Buch mit
                             Geschichten aus dem
                             geschichtsträchtigen Bahnhofbuffet Arth-Goldau von
@@ -85,10 +84,7 @@
                         </h2>
                         <p class="text-md md:text-lg lg:text-3xl xl:text-4xl text-center">Geplante Veröffentlichung
                             Frühjahr 2022</p>
-
                     </div>
-
-
                 </div>
             </div>
         </section>
@@ -96,7 +92,7 @@
         <section id="about" class="">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
                 <div class="flex py-20 lg:py-40 flex-col justify-center bg-buffetgrey-200">
-                    <p class="mx-5 md:mx-20 text-md md:text-lg lg:text-3xl line-height-class-small">
+                    <p class="mx-5 lg:mx-20 text-md md:text-lg lg:text-3xl line-height-class-small">
                         22 Jahre wirteten Silvia Steffen-Simon und ihr Mann Rudolf im Bahnhofbuffet Arth-Goldau. Im
                         Jahr 2000 vollendeten sie, was die Familie Simon drei Generationen vor ihnen begann. Über
                         100 Jahre war das Bahnhofbuffet Arth-Goldau Schauplatz unzähliger Geschehnisse. Kehren Sie
@@ -104,14 +100,14 @@
                         letzten Wirtin Silvia Steffen-Simon.
                     </p>
                 </div>
-                <div class="flex flex-col py-20 lg:py-40 justify-center md:items-center bg-buffetred">
+                <div class="flex flex-col py-20 lg:py-40 justify-center lg:items-center bg-buffetred">
                     <img class="" src="img/restaurant_smaller.jpg" alt="Picture of restaurant">
                 </div>
             </div>
         </section>
 
         <section id="support" class="bg-buffetgrey-300 py-20 lg:py-36">
-            <div class="mx-5 md:mx-20 text-md md:text-lg">
+            <div class="mx-5 lg:mx-20 text-md md:text-lg">
                 <p class="mb-2 text-3xl lg:text-4xl text-center">Unterstützung</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
                     <div class="w-full rounded flex justify-center">
