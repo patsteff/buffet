@@ -1,7 +1,6 @@
 const burger = document.querySelector("#burger");
 const menu = document.querySelector("#menu");
 const menuitem = document.querySelectorAll(".menuitem");
-console.log(menuitem);
 
 
 burger.addEventListener('click', () => {
