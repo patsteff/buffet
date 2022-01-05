@@ -15,6 +15,7 @@
     <meta name="author" content="Steffen">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="custom.css">
+    <script src="index.js" defer></script>
 
 </head>
 
@@ -57,9 +58,9 @@
 
             <!-- mobile menu -->
             <div class="bg-buffetred text-white mobile-menu hidden lg:hidden" id="menu">
-                <a href="#about" class="block py-2 px-4 text-sm hover:text-black menuitem">Das Buch</a>
-                <a href="#support" class="block py-2 px-4 text-sm hover:text-black menuitem">Unterstützung</a>
-                <a href="#contact" class="block py-2 px-4 text-sm hover:text-black menuitem">Kontakt</a>
+                <a href="#about" class="block py-2 px-4 text-md menuitem">Das Buch</a>
+                <a href="#support" class="block py-2 px-4 text-md menuitem">Unterstützung</a>
+                <a href="#contact" class="block py-2 px-4 text-md menuitem">Kontakt</a>
             </div>
         </nav>
     </header>
@@ -79,14 +80,23 @@
                 <div class="flex flex-col lg:w-1/2 lg:h-screen lg:bg-buffetgrey-200 justify-center">
                     <div
                         class="text-white mt-10 lg:mt-0 mx-5 lg:text-gray-600 flex flex-col justify-center items-center">
-                        <h1 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl xl:mb-10 text-center line-height-class">
+                        <h1
+                            class="text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-3 lg:mb-5 xl:mb-7 text-center line-height-class">
                             Das Buchprojekt Einkehr
                         </h1>
                         <h2
-                            class="text-xl md:font-bold md:text-2xl lg:text-3xl xl:text-4xl mb-2 lg:mb-5 xl:mb-10 text-center line-height-class">
+                            class="text-xl md:font-bold md:text-2xl lg:text-3xl xl:text-4xl mb-3 lg:mb-5 xl:mb-7 text-center line-height-class">
                             Erinnerungen der letzten Wirtin ans Bahnhofbuffet Arth-Goldau</h2>
-                        <p class="text-md md:text-lg lg:text-xl xl:text-2xl text-center">Geplante Veröffentlichung
+                        <p class="text-md md:text-lg lg:text-xl xl:text-2xl text-center mb-5 lg:mb-7">Geplante
+                            Veröffentlichung
                             Frühjahr 2022</p>
+                        <a href="#newsletter" class="mx-auto w-100 mb-3 lg:mb-5 xl:mb-7">
+                            <button
+                                class="bg-white hover:bg-buffetgrey-300 text-gray-600 text-md md:text-lg py-2 px-4 rounded shadow w-100 ">
+                                Für Newsletter anmelden
+                            </button>
+                        </a>
+
                     </div>
                 </div>
             </div>
@@ -107,7 +117,7 @@
                     </p>
                     <a href="./bestellen.html" class="mx-auto mt-5 w-100">
                         <button
-                            class="bg-white hover:bg-buffetgrey-300 text-md md:text-lg font-semibold py-2 px-4 border border-gray-400 rounded shadow w-100 ">
+                            class="bg-white hover:bg-buffetgrey-300 text-gray-600 text-md md:text-lg py-2 px-4 rounded shadow w-100 ">
                             Buch bestellen
                         </button>
                     </a>
@@ -171,19 +181,23 @@
             </div>
         </section>
 
+        <section id="newsletter" class="my-10 md:my-20">
+            <div class="flex justify-center">
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLScE5S0H_Qaf3I1Ww21EYLf33Bv-I1u5-1fV5SO9nwtGJBmikA/viewform?embedded=true"
+                    width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+            </div>
+        </section>
+
         <section id="contact" class="my-10 md:my-20 flex justify-center text-center">
             <h2 class="text-3xl lg:text-4xl mx-5">Fragen? Schreiben Sie uns an info@einkehr.ch</h2>
         </section>
+
         <footer class="mx-5 my-2 text-sm md:text-md lg:text-lg flex justify-center text-center">
             <div>Copyright &copy; Patricia Steffen, Ursina Steffen, Silvana Steffen 2021</div>
-
         </footer>
     </main>
 
-
-    <script src="index.js"></script>
-    <script
-        id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/90f44ffea4ad4900c253ba760/c557a068d87a195f578218d9c.js");</script>
 </body>
 
 </html>
