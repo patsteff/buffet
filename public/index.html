@@ -1,266 +1,406 @@
 <!DOCTYPE html>
 <html lang="de">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buch Einkehr - Bahnhofbuffet Arth-Goldau
-    </title>
-    <link rel="icon" type="image/png" href="img/book-bookmark-light.svg">
-    <meta name="description"
-        content="Einkehr - Erinnerungen und Geschichten der letzten Wirtin ans Bahnhofbuffet Arth-Goldau. Von Silvia Steffen-Simon.">
-    <meta name="keywords"
-        content="Buch, Buffet, Bahnhofbuffet, Arth-Goldau, Goldau, Silvia, Steffen, Geschichten, Erinnerungen, Einkehr">
-    <meta name="author" content="Steffen">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="custom.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buch Einkehr - Bahnhofbuffet Arth-Goldau</title>
+    <link rel="icon" type="image/png" href="img/book-bookmark-light.svg" />
+    <meta
+      name="description"
+      content="Einkehr - Erinnerungen und Geschichten der letzten Wirtin ans Bahnhofbuffet Arth-Goldau. Von Silvia Steffen-Simon."
+    />
+    <meta
+      name="keywords"
+      content="Buch, Buffet, Bahnhofbuffet, Arth-Goldau, Goldau, Silvia, Steffen, Geschichten, Erinnerungen, Einkehr"
+    />
+    <meta name="author" content="Steffen" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="custom.css" />
     <script src="index.js" defer></script>
+  </head>
 
-</head>
-
-<body class="text-gray-600 font-body">
+  <body class="text-gray-600 font-body">
     <header class="fixed top-0 z-50">
-        <nav class="bg-buffetred text-white lg:text-gray-600 lg:bg-buffetgrey-300 fixed w-full h-16 top-0">
-            <div class="lg:mx-10 mx-auto px-4">
-                <div class="flex justify-between ">
+      <nav
+        class="bg-buffetred text-white lg:text-gray-600 lg:bg-buffetgrey-300 fixed w-full h-16 top-0"
+      >
+        <div class="lg:mx-10 mx-auto px-4">
+          <div class="flex justify-between">
+            <div class="flex space-x-4">
+              <!-- logo -->
+              <div>
+                <a
+                  href="#"
+                  class="flex items-center py-5 px-2 text-lg md:text-xl lg:text-2xl"
+                >
+                  <span class="font-bold hover:text-black uppercase"
+                    >Einkehr</span
+                  >
+                </a>
+              </div>
 
-                    <div class="flex space-x-4">
-                        <!-- logo -->
-                        <div>
-                            <a href="#" class="flex items-center py-5 px-2 text-lg md:text-xl lg:text-2xl">
-                                <span class="font-bold hover:text-black uppercase ">Einkehr</span>
-                            </a>
-                        </div>
-
-                        <!-- primary nav -->
-                        <div class="hidden lg:flex items-center space-x-1 text-lg lg:text-2xl ">
-                            <a href="#book" class="py-5 px-3 hover:text-black ">Das
-                                Buch</a>
-                            <a href="#support" class="py-5 px-3 hover:text-black">Unterstützung</a>
-                            <a href="#about" class="py-5 px-3 hover:text-black">Über uns</a>
-                            <a href="#contact" class="py-5 px-3 hover:text-black">Kontakt</a>
-                        </div>
-                    </div>
-
-                    <!-- mobile button goes here -->
-                    <div class="lg:hidden flex items-center">
-                        <button class="mobile-menu-button" id="burger">
-                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h16M4 18h16" />
-                            </svg>
-                        </button>
-                    </div>
-
-                </div>
+              <!-- primary nav -->
+              <div
+                class="hidden lg:flex items-center space-x-1 text-lg lg:text-2xl"
+              >
+                <a href="#book" class="py-5 px-3 hover:text-black">Das Buch</a>
+                <a href="#support" class="py-5 px-3 hover:text-black"
+                  >Unterstützung</a
+                >
+                <a href="#about" class="py-5 px-3 hover:text-black">Über uns</a>
+                <a href="#contact" class="py-5 px-3 hover:text-black"
+                  >Kontakt</a
+                >
+              </div>
             </div>
 
-            <!-- mobile menu -->
-            <div class="bg-buffetred text-white mobile-menu hidden lg:hidden" id="menu">
-                <a href="#book" class="block py-2 px-4 text-lg menuitem">Das Buch</a>
-                <a href="#support" class="block py-2 px-4 text-lg menuitem">Unterstützung</a>
-                <a href="#about" class="block py-2 px-4 text-lg menuitem">Über uns</a>
-                <a href="#contact" class="block py-2 px-4 text-lg menuitem">Kontakt</a>
+            <!-- mobile button goes here -->
+            <div class="lg:hidden flex items-center">
+              <button class="mobile-menu-button" id="burger">
+                <svg
+                  class="w-6 h-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
             </div>
-        </nav>
+          </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div
+          class="bg-buffetred text-white mobile-menu hidden lg:hidden"
+          id="menu"
+        >
+          <a href="#book" class="block py-2 px-4 text-lg menuitem">Das Buch</a>
+          <a href="#support" class="block py-2 px-4 text-lg menuitem"
+            >Unterstützung</a
+          >
+          <a href="#about" class="block py-2 px-4 text-lg menuitem">Über uns</a>
+          <a href="#contact" class="block py-2 px-4 text-lg menuitem"
+            >Kontakt</a
+          >
+        </div>
+      </nav>
     </header>
     <!-- end nav -->
 
     <main class="">
-        <!-- start section -->
-        <section class="mt-16 h-screen top-0" id="start">
-            <div class="w-full bg-buffetred flex flex-col lg:flex-row justify-center items-center h-screen">
-                <div class="flex justify-center lg:items-center lg:w-1/2 lg:bg-buffetred ">
-                    <div class="flex justify-center lg:items-center l">
-                        <img class="shadow-2xl  einkehrimage w-5/6 lg:w-2/3" src="./img/buch_einkehr-min.jpg"
-                            alt="Buchcover Einkehr Erinnerungen der letzten Wirtin ans Bahnhofbuffet Arth-Goldau">
-                    </div>
-
-                </div>
-                <div class="flex flex-col lg:w-1/2 lg:h-screen lg:bg-buffetgrey-200 justify-center">
-                    <div
-                        class="text-white mt-10 lg:mt-0 mx-5 lg:text-gray-600 flex flex-col justify-center items-center">
-                        <h1
-                            class="text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-3 lg:mb-5 xl:mb-7 text-center line-height-class">
-                            Das Buchprojekt Einkehr
-                        </h1>
-                        <h2
-                            class="text-xl md:font-bold md:text-2xl lg:text-3xl xl:text-4xl mb-3 lg:mb-5 xl:mb-7 text-center line-height-class">
-                            Erinnerungen der letzten Wirtin ans Bahnhofbuffet Arth-Goldau</h2>
-                        <p class="text-md md:text-lg lg:text-xl xl:text-2xl text-center mb-5 lg:mb-7">
-                            Veröffentlichung
-                            am 22. April 2022</p>
-                        <a href="#newsletter" class="mx-auto w-100 mb-3 lg:mb-5 xl:mb-7">
-                            <button
-                                class="bg-white hover:bg-buffetgrey-300 text-gray-600 text-md md:text-lg py-2 px-4 rounded shadow w-100 ">
-                                Informiert werden
-                            </button>
-                        </a>
-
-                    </div>
-                </div>
+      <!-- start section -->
+      <section class="mt-16 h-screen top-0" id="start">
+        <div
+          class="w-full bg-buffetred flex flex-col lg:flex-row justify-center items-center h-screen"
+        >
+          <div
+            class="flex justify-center lg:items-center lg:w-1/2 lg:bg-buffetred"
+          >
+            <div class="flex justify-center lg:items-center l">
+              <img
+                class="shadow-2xl einkehrimage w-5/6 lg:w-2/3"
+                src="./img/buch_einkehr-min.jpg"
+                alt="Buchcover Einkehr Erinnerungen der letzten Wirtin ans Bahnhofbuffet Arth-Goldau"
+              />
             </div>
-        </section>
-
-        <section class="h-screen" id="vernissage">
-            <div class="w-full bg-buffetgrey-300 flex flex-col lg:flex-row justify-center items-center h-screen">
-
-                <div class="flex flex-col lg:w-1/2 lg:h-screen lg:bg-buffetgrey-300 justify-center">
-                    <div class="mt-0 mx-5 text-gray-600 flex flex-col justify-center items-center">
-                        <h1
-                            class="text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-3 lg:mb-5 xl:mb-7 text-center line-height-class">
-                            Einladung Vernissage
-                        </h1>
-                        <h2
-                            class="text-xl md:font-bold md:text-2xl lg:text-3xl xl:text-4xl mb-3 lg:mb-5 xl:mb-7 text-center line-height-class">
-                            Freitagabend 22. April 2022</h2>
-                        <p class="text-md md:text-lg lg:text-xl xl:text-2xl text-center">
-                            19:00 Uhr Türöffnung, 19:30 Uhr Start Vernissage</p>
-                        <p class="text-md md:text-lg lg:text-xl xl:text-2xl text-center mb-7 ">
-                            Aula Schulhaus Sonnegg, 6410 Goldau</p>
-
-                    </div>
-                </div>
-                <div class="flex justify-center lg:items-center lg:w-1/2  ">
-                    <div class="flex justify-center lg:items-center l">
-                        <img class="shadow-2xl  einkehrimage w-5/6 lg:w-2/3" src="./img/vernissage.jpeg"
-                            alt="Buchcover Einkehr Erinnerungen der letzten Wirtin ans Bahnhofbuffet Arth-Goldau">
-                    </div>
-
-                </div>
+          </div>
+          <div
+            class="flex flex-col lg:w-1/2 lg:h-screen lg:bg-buffetgrey-200 justify-center"
+          >
+            <div
+              class="text-white mt-10 lg:mt-0 mx-5 lg:text-gray-600 flex flex-col justify-center items-center"
+            >
+              <h1
+                class="text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-3 lg:mb-5 xl:mb-7 text-center line-height-class"
+              >
+                Das Buchprojekt Einkehr
+              </h1>
+              <h2
+                class="text-xl md:font-bold md:text-2xl lg:text-3xl xl:text-4xl mb-3 lg:mb-5 xl:mb-7 text-center line-height-class"
+              >
+                Erinnerungen der letzten Wirtin ans Bahnhofbuffet Arth-Goldau
+              </h2>
+              <p
+                class="text-md md:text-lg lg:text-xl xl:text-2xl text-center mb-5 lg:mb-7"
+              >
+                Veröffentlichung am 22. April 2022
+              </p>
+              <a href="#newsletter" class="mx-auto w-100 mb-3 lg:mb-5 xl:mb-7">
+                <button
+                  class="bg-white hover:bg-buffetgrey-300 text-gray-600 text-md md:text-lg py-2 px-4 rounded shadow w-100"
+                >
+                  Informiert werden
+                </button>
+              </a>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section id="book" class="">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
-                <div class="flex py-20 lg:py-40 flex-col justify-center bg-buffetgrey-200">
-                    <h2 class="font-bold mx-5 lg:mx-20 text-md md:text-lg lg:text-2xl line-height-class-small">
-                        Geschichten aus dem
-                        Bahnhofbuffet</h2>
-                    <p class="mt-2 mx-5 lg:mx-20 text-md md:text-lg lg:text-2xl line-height-class-small">
-                        22 Jahre wirteten Silvia Steffen-Simon und ihr Mann Rudolf im Bahnhofbuffet Arth-Goldau. Im
-                        Jahr 2000 vollendeten sie, was die Familie Simon drei Generationen vor ihnen begann. Über
-                        100 Jahre war das Bahnhofbuffet Arth-Goldau Schauplatz unzähliger Geschehnisse. Kehren Sie
-                        ein, in Geschichten voller alltäglicher Freude, Leid und Menschlichkeit. Erzählt von der
-                        letzten Wirtin Silvia Steffen-Simon.
-                    </p>
-                    <a href="./bestellen.html" class="mx-auto mt-5 w-100">
-                        <button
-                            class="bg-white hover:bg-buffetgrey-300 text-gray-600 text-md md:text-lg py-2 px-4 rounded shadow w-100 ">
-                            Buch bestellen
-                        </button>
-                    </a>
-
-                </div>
-                <div class="flex flex-col py-20 lg:py-40 justify-center lg:items-center bg-buffetred">
-                    <img class="" src="img/buffet_goldau-min.jpg" alt="Bild Restaurant">
-                </div>
+      <section class="h-screen" id="vernissage">
+        <div
+          class="w-full bg-buffetgrey-300 flex flex-col lg:flex-row justify-center items-center h-screen"
+        >
+          <div
+            class="flex flex-col lg:w-1/2 lg:h-screen lg:bg-buffetgrey-300 justify-center"
+          >
+            <div
+              class="mt-0 mx-5 text-gray-600 flex flex-col justify-center items-center"
+            >
+              <h1
+                class="text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-3 lg:mb-5 xl:mb-7 text-center line-height-class"
+              >
+                Einladung Vernissage
+              </h1>
+              <h2
+                class="text-xl md:font-bold md:text-2xl lg:text-3xl xl:text-4xl mb-3 lg:mb-5 xl:mb-7 text-center line-height-class"
+              >
+                Freitagabend 22. April 2022
+              </h2>
+              <p class="text-md md:text-lg lg:text-xl xl:text-2xl text-center">
+                19:00 Uhr Türöffnung, 19:30 Uhr Start Vernissage
+              </p>
+              <p
+                class="text-md md:text-lg lg:text-xl xl:text-2xl text-center mb-7"
+              >
+                Aula Schulhaus (Eingang oben beim Spielplatz)
+                <a
+                  class="link"
+                  href="https://goo.gl/maps/QPZmj5F4HFEA8cra7"
+                  target="_blank"
+                  >Schulhaus Sonneg</a
+                >, 6410 Goldau
+              </p>
             </div>
-        </section>
-
-        <section id="about" class="">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
-                <div class="flex flex-col justify-center lg:items-center bg-buffetgrey-300">
-                    <img class="" src="img/buffet_wir_1000.JPG" alt="Bild Bahnhof Goldau">
-                </div>
-                <div class="flex py-20 lg:py-40 flex-col justify-center bg-buffetgrey-300 lg:bg-buffetgrey-200">
-                    <h2 class="font-bold mx-5 lg:mx-20 text-md md:text-lg lg:text-2xl line-height-class-small">
-                        Über uns</h2>
-                    <p class="mt-2 mx-5 lg:mx-20 text-md md:text-lg lg:text-2xl line-height-class-small">
-                        Patricia, Ursina und Silvana Steffen sind drei Schwestern aus Goldau und wir veröffentlichen die
-                        Erinnerungen unserer Grossmutter Silvia Steffen-Simon. Das Buffet war ein
-                        geschichtsträchtiger Ort. Dort wo sich heute ein Coop befindet, haben sich über Jahrzehnte
-                        unglaubliche Geschichten abgespielt. Noch heute erzählt unsere Grossmutter sehr lebendig davon
-                        und weckt bei uns einige der schönsten Kindheitserinnerungen.
-                    </p>
-                    <p class="mt-2 mx-5 lg:mx-20 text-md md:text-lg lg:text-2xl line-height-class-small ">
-                        Im Zuge der Corona Pandemie fand sie Zeit, diese Erinnerungen in Form von Kurzgeschichten
-                        aufzuschreiben. Unsere
-                        Begeisterung für die Geschichten und viele positiven Rückmeldungen aus unserem Umfeld brachten
-                        den Stein zu diesem Buch ins Rollen und ein Familienprojekt entstand. «Einkehr» ist das Resultat
-                        davon.
-                    </p>
-                </div>
+          </div>
+          <div class="flex justify-center lg:items-center lg:w-1/2">
+            <div class="flex justify-center lg:items-center l">
+              <img
+                class="shadow-2xl einkehrimage w-5/6 lg:w-2/3"
+                src="./img/vernissage.jpeg"
+                alt="Buchcover Einkehr Erinnerungen der letzten Wirtin ans Bahnhofbuffet Arth-Goldau"
+              />
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section id="support" class="bg-buffetgrey-200 py-20 lg:py-36">
-            <div class="mx-5 lg:mx-20 text-md md:text-lg">
-                <h2 class="mb-2 text-3xl lg:text-4xl text-center">Unterstützung</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
-                    <div class="w-full rounded flex justify-center">
-                        <a href="https://www.sz.ch/" target="_blank">
-                            <img class="bigger-logo" src="img/logo_kt_sz-min.jpg" title="Kanton Schwyz"
-                                alt="Logo Kanton Schwyz">
-                        </a>
-                    </div>
+      <section id="book" class="">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+          <div
+            class="flex py-20 lg:py-40 flex-col justify-center bg-buffetgrey-200"
+          >
+            <h2
+              class="font-bold mx-5 lg:mx-20 text-md md:text-lg lg:text-2xl line-height-class-small"
+            >
+              Geschichten aus dem Bahnhofbuffet
+            </h2>
+            <p
+              class="mt-2 mx-5 lg:mx-20 text-md md:text-lg lg:text-2xl line-height-class-small"
+            >
+              22 Jahre wirteten Silvia Steffen-Simon und ihr Mann Rudolf im
+              Bahnhofbuffet Arth-Goldau. Im Jahr 2000 vollendeten sie, was die
+              Familie Simon drei Generationen vor ihnen begann. Über 100 Jahre
+              war das Bahnhofbuffet Arth-Goldau Schauplatz unzähliger
+              Geschehnisse. Kehren Sie ein, in Geschichten voller alltäglicher
+              Freude, Leid und Menschlichkeit. Erzählt von der letzten Wirtin
+              Silvia Steffen-Simon.
+            </p>
+            <a href="./bestellen.html" class="mx-auto mt-5 w-100">
+              <button
+                class="bg-white hover:bg-buffetgrey-300 text-gray-600 text-md md:text-lg py-2 px-4 rounded shadow w-100"
+              >
+                Buch bestellen
+              </button>
+            </a>
+          </div>
+          <div
+            class="flex flex-col py-20 lg:py-40 justify-center lg:items-center bg-buffetred"
+          >
+            <img
+              class=""
+              src="img/buffet_goldau-min.jpg"
+              alt="Bild Restaurant"
+            />
+          </div>
+        </div>
+      </section>
 
-                    <div class="w-full rounded flex justify-center">
-                        <a href="http://www.arth.ch/de/" target="_blank">
-                            <img class="bigger-logo" src="img/logo_arth.jpg" title="Gemeinde Arth"
-                                alt="Logo Gemeinde Arth">
-                        </a>
-                    </div>
-                    <div class="w-full rounded flex justify-center">
-                        <a href="https://karlbucher.ch/" target="_blank">
-                            <img class="bigger-logo" src="img/logo_karlbucher-min.jpg" title="Karl Bucher"
-                                alt="Logo Karl Bucher">
-                        </a>
-                    </div>
+      <section id="about" class="">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+          <div
+            class="flex flex-col justify-center lg:items-center bg-buffetgrey-300"
+          >
+            <img
+              class=""
+              src="img/buffet_wir_1000.JPG"
+              alt="Bild Bahnhof Goldau"
+            />
+          </div>
+          <div
+            class="flex py-20 lg:py-40 flex-col justify-center bg-buffetgrey-300 lg:bg-buffetgrey-200"
+          >
+            <h2
+              class="font-bold mx-5 lg:mx-20 text-md md:text-lg lg:text-2xl line-height-class-small"
+            >
+              Über uns
+            </h2>
+            <p
+              class="mt-2 mx-5 lg:mx-20 text-md md:text-lg lg:text-2xl line-height-class-small"
+            >
+              Patricia, Ursina und Silvana Steffen sind drei Schwestern aus
+              Goldau und wir veröffentlichen die Erinnerungen unserer
+              Grossmutter Silvia Steffen-Simon. Das Buffet war ein
+              geschichtsträchtiger Ort. Dort wo sich heute ein Coop befindet,
+              haben sich über Jahrzehnte unglaubliche Geschichten abgespielt.
+              Noch heute erzählt unsere Grossmutter sehr lebendig davon und
+              weckt bei uns einige der schönsten Kindheitserinnerungen.
+            </p>
+            <p
+              class="mt-2 mx-5 lg:mx-20 text-md md:text-lg lg:text-2xl line-height-class-small"
+            >
+              Im Zuge der Corona Pandemie fand sie Zeit, diese Erinnerungen in
+              Form von Kurzgeschichten aufzuschreiben. Unsere Begeisterung für
+              die Geschichten und viele positiven Rückmeldungen aus unserem
+              Umfeld brachten den Stein zu diesem Buch ins Rollen und ein
+              Familienprojekt entstand. «Einkehr» ist das Resultat davon.
+            </p>
+          </div>
+        </div>
+      </section>
 
-                    <div class="w-full rounded flex justify-center">
-                        <a href="https://www.rigi.ch/" target="_blank">
-                            <img class="bigger-logo" src="img/logo_rigi-min.jpg" title="Rigi" alt="Logo Rigi">
-                        </a>
-                    </div>
-
-                    <div class="w-full rounded flex justify-center">
-                        <a href="https://www.schmidlin.ch" target="_blank">
-                            <img class="bigger-logo" src="img/logo_schmidlin-min.jpg" title="Schmidlin"
-                                alt="Logo Schmidlin">
-                        </a>
-                    </div>
-                    <div class="w-full rounded flex justify-center">
-                        <a href="https://www.szkb.ch/" target="_blank">
-                            <img class="bigger-logo" src="img/logo_szkb-min.jpg" title="SZKB" alt="Logo SZKB">
-                        </a>
-                    </div>
-                    <div class="w-full rounded flex justify-center">
-                        <a href="https://www.victorinox.com" target="_blank">
-                            <img class="bigger-logo" src="img/logo_victorinox-min.jpg" title="Victorinox"
-                                alt="Logo Victorinox">
-                        </a>
-                    </div>
-                    <div class="w-full rounded flex justify-center">
-                        <a href="https://www.bezirk-schwyz.ch/" target="_blank">
-                            <img class="bigger-logo" src="img/logo_bezirk.jpg" title="Bezirk Schwyz"
-                                alt="Bezirk Schwyz">
-                        </a>
-                    </div>
-
-                </div>
+      <section id="support" class="bg-buffetgrey-200 py-20 lg:py-36">
+        <div class="mx-5 lg:mx-20 text-md md:text-lg">
+          <h2 class="mb-2 text-3xl lg:text-4xl text-center">Unterstützung</h2>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8"
+          >
+            <div class="w-full rounded flex justify-center">
+              <a href="https://www.sz.ch/" target="_blank">
+                <img
+                  class="bigger-logo"
+                  src="img/logo_kt_sz-min.jpg"
+                  title="Kanton Schwyz"
+                  alt="Logo Kanton Schwyz"
+                />
+              </a>
             </div>
-        </section>
 
-        <section id="newsletter" class="py-10 md:py-20 bg-buffetgrey-300">
-            <div class="flex justify-center">
-                <iframe
-                    src="https://docs.google.com/forms/d/e/1FAIpQLScE5S0H_Qaf3I1Ww21EYLf33Bv-I1u5-1fV5SO9nwtGJBmikA/viewform?embedded=true"
-                    width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+            <div class="w-full rounded flex justify-center">
+              <a href="http://www.arth.ch/de/" target="_blank">
+                <img
+                  class="bigger-logo"
+                  src="img/logo_arth.jpg"
+                  title="Gemeinde Arth"
+                  alt="Logo Gemeinde Arth"
+                />
+              </a>
             </div>
-        </section>
+            <div class="w-full rounded flex justify-center">
+              <a href="https://karlbucher.ch/" target="_blank">
+                <img
+                  class="bigger-logo"
+                  src="img/logo_karlbucher-min.jpg"
+                  title="Karl Bucher"
+                  alt="Logo Karl Bucher"
+                />
+              </a>
+            </div>
 
-        <section id="contact" class="my-5 md:my-10 flex justify-center text-center">
-            <h2 class="text-3xl lg:text-4xl mx-5">Fragen? Schreiben Sie uns an info@einkehr.ch</h2>
-        </section>
+            <div class="w-full rounded flex justify-center">
+              <a href="https://www.rigi.ch/" target="_blank">
+                <img
+                  class="bigger-logo"
+                  src="img/logo_rigi-min.jpg"
+                  title="Rigi"
+                  alt="Logo Rigi"
+                />
+              </a>
+            </div>
 
-        <footer class="mx-5 my-2 text-sm md:text-md lg:text-lg flex justify-center text-center">
-            <div>Copyright &copy; Patricia Steffen, Ursina Steffen, Silvana Steffen 2022</div>
-        </footer>
+            <div class="w-full rounded flex justify-center">
+              <a href="https://www.schmidlin.ch" target="_blank">
+                <img
+                  class="bigger-logo"
+                  src="img/logo_schmidlin-min.jpg"
+                  title="Schmidlin"
+                  alt="Logo Schmidlin"
+                />
+              </a>
+            </div>
+            <div class="w-full rounded flex justify-center">
+              <a href="https://www.szkb.ch/" target="_blank">
+                <img
+                  class="bigger-logo"
+                  src="img/logo_szkb-min.jpg"
+                  title="SZKB"
+                  alt="Logo SZKB"
+                />
+              </a>
+            </div>
+            <div class="w-full rounded flex justify-center">
+              <a href="https://www.victorinox.com" target="_blank">
+                <img
+                  class="bigger-logo"
+                  src="img/logo_victorinox-min.jpg"
+                  title="Victorinox"
+                  alt="Logo Victorinox"
+                />
+              </a>
+            </div>
+            <div class="w-full rounded flex justify-center">
+              <a href="https://www.bezirk-schwyz.ch/" target="_blank">
+                <img
+                  class="bigger-logo"
+                  src="img/logo_bezirk.jpg"
+                  title="Bezirk Schwyz"
+                  alt="Bezirk Schwyz"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="newsletter" class="py-10 md:py-20 bg-buffetgrey-300">
+        <div class="flex justify-center">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLScE5S0H_Qaf3I1Ww21EYLf33Bv-I1u5-1fV5SO9nwtGJBmikA/viewform?embedded=true"
+            width="640"
+            height="480"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            >Wird geladen…</iframe
+          >
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        class="my-5 md:my-10 flex justify-center text-center"
+      >
+        <h2 class="text-3xl lg:text-4xl mx-5">
+          Fragen? Schreiben Sie uns an info@einkehr.ch
+        </h2>
+      </section>
+
+      <footer
+        class="mx-5 my-2 text-sm md:text-md lg:text-lg flex justify-center text-center"
+      >
+        <div>
+          Copyright &copy; Patricia Steffen, Ursina Steffen, Silvana Steffen
+          2022
+        </div>
+      </footer>
     </main>
-
-</body>
-
+  </body>
 </html>
